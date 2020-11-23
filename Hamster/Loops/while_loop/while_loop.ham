@@ -1,4 +1,4 @@
-void main() {
+/*imperative program*/void main() {
   while(vornFrei()){
     vor();
   }
