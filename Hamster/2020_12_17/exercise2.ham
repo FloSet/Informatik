@@ -1,0 +1,25 @@
+/*imperative program*/void main() {
+    int count = forwardToWall();
+    while(count>0){
+    	gib();
+    	count--;
+    }
+    turn();
+    vor();
+    turn();
+    
+}
+
+int forwardToWall(){
+    int steps = 0;
+    while(vornFrei()){
+        vor();
+        steps++;
+    }
+    return steps;
+}
+
+void turn(){
+	linksUm();
+	linksUm();
+}
