@@ -1,0 +1,44 @@
+/*imperative program*/void main() {
+    int laengeGang = 1;
+    while(vornFrei()){
+        vor();
+        laengeGang++;
+    }
+
+    linksUm();
+    linksUm();
+    
+    while(vornFrei()){
+        vor();
+    }
+
+    linksUm();
+    linksUm();
+
+    int[] korn = new int[laengeGang];
+
+    for(int i=0; i<laengeGang-1; i++){
+        korn[i]=zaehleKoerner();
+        vor();
+    }
+
+    korn[korn.length - 1] = zaehleKoerner();
+
+    for (int i = 0; i < laengeGang; i++){
+        schreib("Feld:" + (i+1) + ":" + korn[i] + "Körner.");
+    }
+}
+
+int zaehleKoerner(){
+    int anzK = 0;
+
+    while (kornDa()){
+        nimm();
+        anzK++;
+    }
+
+    for (int i = 1; i <= anzK; i++)
+        gib();
+
+    return anzK;
+}
