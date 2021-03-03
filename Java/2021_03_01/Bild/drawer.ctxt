@@ -1,7 +1,6 @@
 #BlueJ class context
 comment0.target=drawer
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ draw.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment0.text=\r\n\ @author\ Florian\ Schmidtke\r\n\ @version\ 03.03.2021/\ 1.0.0\r\n\r\n
 comment1.params=
 comment1.target=drawer()
-comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ draw\r\n
 numComments=2
