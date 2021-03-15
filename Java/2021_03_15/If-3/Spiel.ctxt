@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Spiel
+comment1.params=
+comment1.target=Spiel()
+comment2.params=eingabe1\ eingabe2
+comment2.target=int\ SteinScherePapier(java.lang.String,\ java.lang.String)
+numComments=3
