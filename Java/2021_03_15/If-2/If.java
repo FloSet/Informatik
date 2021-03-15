@@ -1,10 +1,3 @@
-
-/**
- * Beschreiben Sie hier die Klasse If.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
 public class If
 {
     int a = 5;
