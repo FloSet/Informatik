@@ -25,11 +25,11 @@ public class Auto
         
         if((tankinhalt / (verbrauch / 100)) >= Strecke){
             kilometerstand += Strecke;
-            tankinhalt = ((verbrauch / 100) * Strecke);
+            tankinhalt -= ((verbrauch / 100) * Strecke);
         }
         else{
             kilometerstand += tankinhalt / (verbrauch / 100);
-            tankinhalt = ((verbrauch / 100) * (tankinhalt / (verbrauch / 100)));
+            tankinhalt -= ((verbrauch / 100) * (tankinhalt / (verbrauch / 100)));
         }
     }
 
