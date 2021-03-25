@@ -1,5 +1,0 @@
-#BlueJ class context
-comment0.target=Alkohol
-comment1.params=cAtome\ pos
-comment1.target=java.lang.String\ gibAlkohol(int,\ int)
-numComments=2
