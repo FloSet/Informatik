@@ -45,3 +45,12 @@ hs_err_pid*
 ### vscode ###
 !.vscode/settings.json
 !.vscode/extensions.json
+Greenfoot/Einstieg/little-crab/greenfoot/World.java
+Greenfoot/Einstieg/little-crab/greenfoot/UserInfo.java
+Greenfoot/Einstieg/little-crab/greenfoot/MouseInfo.java
+Greenfoot/Einstieg/little-crab/greenfoot/GreenfootSound.java
+Greenfoot/Einstieg/little-crab/greenfoot/GreenfootImage.java
+Greenfoot/Einstieg/little-crab/greenfoot/Greenfoot.java
+Greenfoot/Einstieg/little-crab/greenfoot/Font.java
+Greenfoot/Einstieg/little-crab/greenfoot/Color.java
+Greenfoot/Einstieg/little-crab/greenfoot/Actor.java
