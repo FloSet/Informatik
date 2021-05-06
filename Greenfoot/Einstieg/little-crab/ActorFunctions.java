@@ -24,7 +24,7 @@ public abstract class ActorFunctions extends Actor
             }
             if(endGame){
                 Greenfoot.stop();
-                System.out.println(CrabWorld.wormsEated);
+                System.out.println("Würmer gegessen:" + CrabWorld.wormsEated);
             }
         }
     }

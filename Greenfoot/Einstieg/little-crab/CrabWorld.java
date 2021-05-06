@@ -1,17 +1,16 @@
 import greenfoot.*;  // (Actor, World, Greenfoot, GreenfootImage)
-import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class CrabWorld extends World
 {
-    public static int wormsEated = 0;
+    static public int wormsEated = 0;
     static int interval = 60;
-    static Timer timer;
+    Timer timer;
 
     /**
      * Create the crab world (the beach). Our world has a size 
-     * of 560x560 cells, where every cell is just 1 pixel.
+     * of 560x560 cells, where every cell is just 1 pixels
      */
     public CrabWorld() 
     {
@@ -21,24 +20,33 @@ public class CrabWorld extends World
         timer();
     }
 
-    public static void timer() {
+    //Löst die Ticks aus
+    public void timer() {
         int delay = 1000;
         int period = 1000;
         timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
 
             public void run() {
-                System.out.println(setInterval());
-
+                showText(String.valueOf(setInterval()),540, 10);
             }
         }, delay, period);
     }
 
-    private static final int setInterval() {
-        if (interval == 1)
-            timer.cancel();
+    //Zählt
+    private final int setInterval() {
+        if (interval == 1){
+            stopTimer();
+        }
         return --interval;
     }
+
+    //Stoppt den Countdown
+    public void stopTimer(){
+        timer.cancel();
+        Greenfoot.setWorld(new CrabWorld());
+        interval = 60;
+    };
     
 
     /**
