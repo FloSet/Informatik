@@ -1,8 +1,13 @@
 import greenfoot.*;  // (Actor, World, Greenfoot, GreenfootImage)
+import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class CrabWorld extends World
 {
     public static int wormsEated = 0;
+    static int interval = 60;
+    static Timer timer;
 
     /**
      * Create the crab world (the beach). Our world has a size 
@@ -13,7 +18,28 @@ public class CrabWorld extends World
         super(560, 560, 1);
         wormsEated = 0;
         prepare();
+        timer();
     }
+
+    public static void timer() {
+        int delay = 1000;
+        int period = 1000;
+        timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+
+            public void run() {
+                System.out.println(setInterval());
+
+            }
+        }, delay, period);
+    }
+
+    private static final int setInterval() {
+        if (interval == 1)
+            timer.cancel();
+        return --interval;
+    }
+    
 
     /**
      * Prepare the world for the start of the program.
